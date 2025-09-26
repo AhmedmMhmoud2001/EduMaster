@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // الكود الناتج هيكون حديث وفعال
+    "module": "commonjs",                   // لأنك بتستخدم Node.js
+    "rootDir": "src",                       // كل الكود المصدر داخل src/
+    "outDir": "dist",                       // الملفات الناتجة تروح dist/
+    "esModuleInterop": true,                // يسمح باستخدام import بشكل طبيعي
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                         // تفعيل الفحص الصارم
+    "skipLibCheck": true                    // تجاهل أخطاء types في node_modules
+  },
+  "include": ["src"],                       // ترجم كل الملفات داخل src/
+  "exclude": ["node_modules", "dist"]       // تجاهل node_modules و dist
+}

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import * as crypto from "crypto";
+import crypto from "crypto";
 import User from "../models/User";
 import { transporter } from "../config/email";
 import { hashPassword, comparePassword, generateToken } from "../utils/auth";

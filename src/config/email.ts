@@ -1,4 +1,4 @@
-import * as nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
 export const transporter = nodemailer.createTransport({
   service: "gmail", // أو أي SMTP Provider
