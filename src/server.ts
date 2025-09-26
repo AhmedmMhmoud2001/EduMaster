@@ -6,7 +6,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI as string;
-
+app.set('trust proxy', true); 
 const startServer = async () => {
   try {
     // ✅ الاتصال بقاعدة البيانات
